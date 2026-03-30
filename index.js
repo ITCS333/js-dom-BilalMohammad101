@@ -21,7 +21,9 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
-  
+  const newItem = document.createElement("li");
+  newItem.textContent = "New Item";
+  document.getElementById("item-list").appendChild(newItem);
 }
 
 /**
@@ -29,7 +31,8 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
-  
+  const paragraph = document.querySelector(".content-para");
+  paragraph.classList.add("highlight");
 }
 
 /**
@@ -37,6 +40,8 @@ function highlightParagraph() {
  */
 function removeElement() {
   // TODO: Implement this function
+  const element = document.getElementById("to-be-removed");
+  element.remove();
    
 }
 
